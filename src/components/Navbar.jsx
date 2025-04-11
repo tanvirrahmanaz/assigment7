@@ -4,11 +4,11 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-full bg-white shadow-sm border-b-2 border-blue-500 px-6">
-      {/* Full Width Navbar with no max-width */}
+    <div className="w-full bg-white shadow-sm border-b-2 border-blue-500">
+      {/* Full width navbar without margin or padding */}
       <div className="w-full flex items-center justify-between h-16 flex-nowrap">
         {/* Left: Logo */}
-        <div className="shrink-0">
+        <div className="shrink-0 pl-10">
           <a className="text-[20px] font-bold whitespace-nowrap">
             <span className="text-blue-700">Auction</span>
             <span className="text-yellow-400">Gallery</span>
@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         {/* Right: Notification + Avatar */}
-        <div className="flex items-center gap-4 shrink-0">
+        <div className="flex items-center gap-4 pr-4 shrink-0">
           {/* Hamburger for mobile */}
           <div className="md:hidden">
             <button onClick={() => setMenuOpen(!menuOpen)} className="btn btn-ghost">
@@ -38,7 +38,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Notification bell with badge */}
+          {/* Notification with badge */}
           <div className="relative hidden md:block">
             <button className="btn btn-circle bg-white border border-gray-200 shadow hover:shadow-md">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-gray-700" fill="none"
