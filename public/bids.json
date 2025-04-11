@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "title": "Vintage Leica M3 Camera",
+      "description": "A legendary 35mm film camera loved by photographers worldwide.",
+      "currentBidPrice": 2750,
+      "timeLeft": "2 Days left",
+      "bidsCount": 12,
+      "image": "/assets/Bid1-min.png"
+    },
+    {
+      "id": 2,
+      "title": "1965 Gibson SG Standard Electric Guitar",
+      "description": "Classic tone, vintage rock & roll feel. Collector's favorite.",
+      "currentBidPrice": 850,
+      "timeLeft": "2 Days left",
+      "bidsCount": 18,
+      "image": "/assets/Bid2-min.png"
+    },
+    {
+      "id": 3,
+      "title": "Original Apple Macintosh 128K (1984)",
+      "description": "First ever Macintosh personal computer in excellent condition.",
+      "currentBidPrice": 285,
+      "timeLeft": "2 Days left",
+      "bidsCount": 24,
+      "image": "/assets/Bid3-min.png"
+    },
+    {
+      "id": 4,
+      "title": "Rolex Submariner 16610",
+      "description": "Luxury dive watch. Stainless steel. Timeless style.",
+      "currentBidPrice": 280,
+      "timeLeft": "2 Days left",
+      "bidsCount": 32,
+      "image": "/assets/Bid4-min.png"
+    },
+    {
+      "id": 5,
+      "title": "First Edition 'The Great Gatsby'",
+      "description": "Rare signed first edition of F. Scott Fitzgerald’s classic.",
+      "currentBidPrice": 2245,
+      "timeLeft": "2 Days left",
+      "bidsCount": 7,
+      "image": "/assets/Bid5-min.png"
+    },
+    {
+      "id": 6,
+      "title": "Mid-Century Modern Eames Lounge Chair",
+      "description": "Iconic vintage chair with ottoman, perfect condition.",
+      "currentBidPrice": 2770,
+      "timeLeft": "2 Days left",
+      "bidsCount": 10,
+      "image": "/assets/Bid6-min.png"
+    },
+    {
+      "id": 7,
+      "title": "Banksy Original Screen Print",
+      "description": "Rare Banksy print, certified and framed. Street art legend.",
+      "currentBidPrice": 2330,
+      "timeLeft": "2 Days left",
+      "bidsCount": 15,
+      "image": "/assets/Bid7-min.png"
+    }
+  ]
+  
