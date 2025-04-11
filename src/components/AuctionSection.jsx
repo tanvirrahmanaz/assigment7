@@ -34,7 +34,7 @@ export default function AuctionSection() {
         <h2 className="text-2xl font-bold text-gray-800 mb-1">Active Auctions</h2>
         <p className="text-gray-600 mb-4">Discover and bid on extraordinary items</p>
 
-        <table className="w-full text-left border-separate border-spacing-y-2">
+        <table className="w-full text-left table-fixed border-collapse">
           <thead>
             <tr className="text-gray-500 text-sm">
               <th>Items</th>
@@ -46,8 +46,9 @@ export default function AuctionSection() {
           <tbody>
             {bids.map(item => (
               <tr
-                key={item.id}
-                className="bg-white border border-blue-200 rounded-md shadow-sm"
+                 ktr
+                 key={item.id}
+                 className="bg-white border border-black border-[1.5px] rounded-md shadow"
               >
                 <td className="flex items-center gap-3 p-3">
                   <img src={item.image} alt={item.title} className="w-12 h-12 rounded" />
@@ -56,17 +57,18 @@ export default function AuctionSection() {
                 <td className="text-sm text-gray-700">${item.currentBidPrice.toLocaleString()}</td>
                 <td className="text-sm text-gray-700">{item.timeLeft}</td>
                 <td>
-                  <button
+                <button
                     disabled={isFavorited(item.id)}
                     onClick={() => handleFavorite(item)}
-                    className={`text-xl p-1 rounded-full transition-all ${
+                    className={`text-xl p-2 rounded-full transition-all ${
                       isFavorited(item.id)
                         ? 'text-red-500 cursor-not-allowed'
-                        : 'hover:text-red-500'
+                        : 'text-gray-600 hover:text-red-500'
                     }`}
                   >
-                    ❤️
+                    <i className={`fa${isFavorited(item.id) ? 's' : 'r'} fa-heart`}></i>
                   </button>
+
                 </td>
               </tr>
             ))}
@@ -77,9 +79,9 @@ export default function AuctionSection() {
       {/* Right: Favorites */}
       <div className="bg-white p-6 rounded-xl shadow min-h-[300px]">
         <h3 className="text-xl font-bold text-gray-800 mb-2">💖 Favorite Items</h3>
-        <hr className="mb-4" />
+        <hr className="mb-4 flex" />
         {favorites.length === 0 ? (
-          <p className="text-sm text-gray-500">No favorites yet<br />Click the heart icon to add</p>
+          <p className="text-sm text-black font-bold text-center items-center justify-center">No favorites yet<br />Click the heart icon on any item to add it to your favorites</p>
         ) : (
           <div className="space-y-3">
             {favorites.map(item => (
@@ -102,7 +104,7 @@ export default function AuctionSection() {
             ))}
           </div>
         )}
-        <div className="mt-6 border-t pt-4 text-right font-semibold text-lg">
+        <div className="mt-6 border-t pt-4 text-black text-right font-semibold text-lg flex justify-between">
           Total bids Amount: <span className="text-black">${totalAmount.toLocaleString()}</span>
         </div>
       </div>
